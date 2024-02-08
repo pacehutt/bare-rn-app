@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import React, {useRef, useState} from 'react';
+import React, {useCallback, useRef, useState} from 'react';
 import SingleClip from './SingleClip';
 import ClipDetails from './ClipDetails';
 import clipsData from '../../../../test_data/clips_data';
@@ -17,27 +17,14 @@ const ClipsScreen = () => {
   const bottomTabHeight = 0;
   const mediaRefs = useRef({});
   const [currentPlayingId, setCurrentPlayingId] = useState(null);
+  const [visibleVideoIndex, setVisibleVideoIndex] = useState(null);
 
-  const onViewableItemsChanged = ({viewableItems, changed}) => {
-    changed.forEach(({item}) => {
-      if (currentPlayingId === item.id) return;
-      const cell = mediaRefs.current[item.id];
-      if (cell) {
-        cell.stop();
-      }
-    });
-
-    viewableItems.forEach(({item}) => {
-      if (currentPlayingId === item.id) return;
-      const cell = mediaRefs.current[item.id];
-      if (cell) {
-        cell.play();
-        setCurrentPlayingId(item.id);
-      }
-    });
-  };
-
-  const renderItem = ({item}) => {
+  const onViewableItemsChanged = useCallback(({viewableItems}) => {
+    if (viewableItems.length > 0) {
+      setVisibleVideoIndex(viewableItems[0].index);
+    }
+  }, []);
+  const renderItem = ({item, index}) => {
     return (
       <View
         style={[
@@ -48,7 +35,9 @@ const ClipsScreen = () => {
           ref={ref => (mediaRefs.current[item.id] = ref)}
           url={item.videoUrl}
           id={item.id}
-          onPlaybackStart={() => setCurrentPlayingId(item.id)}
+          // onPlaybackStart={() => setCurrentPlayingId(item.id)}
+          currentIndex={index}
+          visibleIndex={visibleVideoIndex}
         />
         <ClipDetails clipData={item.clipData} />
       </View>
@@ -72,6 +61,7 @@ const ClipsScreen = () => {
         renderItem={renderItem}
         pagingEnabled
         snapToInterval={Dimensions.get('window').height}
+        disableIntervalMomentum
         keyExtractor={item => item?.id?.toString()}
         onViewableItemsChanged={onViewableItemsChanged}
         windowSize={2}

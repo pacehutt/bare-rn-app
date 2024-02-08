@@ -8,47 +8,51 @@ import React, {
 } from 'react';
 import Video from 'react-native-video';
 
-const SingleClip = forwardRef(({id, url}, parentRef) => {
-  const videoRef = useRef();
-  const [isPlaying, setIsPlaying] = useState(false);
+const SingleClip = forwardRef(
+  ({id, url, currentIndex, visibleIndex}, parentRef) => {
+    const videoRef = useRef();
+    const [isPlaying, setIsPlaying] = useState(false);
 
-  useImperativeHandle(parentRef, () => {
-    if (parentRef.current) {
-      return {
-        play: () => {
-          console.log('play called');
-          videoRef.current.seek(0);
-          setIsPlaying(!isPlaying);
-        },
-        stop: () => {
-          console.log('stop called');
-          videoRef.current.pause();
-          setIsPlaying(false);
-        },
-      };
-    }
-  });
+    const paused = currentIndex !== visibleIndex;
 
-  return (
-    <View style={styles.container}>
-      <Video
-        ref={videoRef}
-        source={{uri: url}}
-        resizeMode="cover"
-        style={styles.video}
-        paused={!isPlaying}
-        repeat
-        fullscreen
-        onLoad={() => {
-          console.log(id, 'loaded');
-          videoRef.current.seek(0);
+    // useImperativeHandle(parentRef, () => {
+    //   if (parentRef.current) {
+    //     return {
+    //       play: () => {
+    //         console.log('play called');
+    //         videoRef.current.seek(0);
+    //         setIsPlaying(!isPlaying);
+    //       },
+    //       stop: () => {
+    //         console.log('stop called');
+    //         videoRef.current.pause();
+    //         setIsPlaying(false);
+    //       },
+    //     };
+    //   }
+    // });
 
-          setIsPlaying(true);
-        }}
-      />
-    </View>
-  );
-});
+    return (
+      <View style={styles.container}>
+        <Video
+          ref={videoRef}
+          source={{uri: url}}
+          resizeMode="cover"
+          style={styles.video}
+          paused={paused}
+          repeat
+          fullscreen
+          onLoad={() => {
+            console.log(id, 'loaded');
+            // videoRef.current.seek(0);
+
+            // setIsPlaying(true);
+          }}
+        />
+      </View>
+    );
+  },
+);
 
 export default SingleClip;
 
