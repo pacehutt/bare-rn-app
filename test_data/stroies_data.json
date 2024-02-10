@@ -1,0 +1,215 @@
+[
+  {
+    "id": "user1",
+    "name": "Razor Inc",
+    "imgUrl": "https://images.pexels.com/photos/19161136/pexels-photo-19161136/free-photo-of-petra-treasury.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    "stories": [
+      {
+        "id": "story11",
+        "sourceUrl": "https://images.pexels.com/photos/10008077/pexels-photo-10008077.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+        "type": "image",
+        "productsList": [
+          {
+            "id": 1,
+            "title": "Cherry Switches",
+            "description": "Professionsl Keyboatd Switches",
+            "price": 12020,
+            "rating": 4.5,
+            "reviewsCount": 1990,
+            "imageUrl": "https://switchandclick.com/wp-content/uploads/2020/08/IMG_5781-1024x683.webp"
+          },
+          {
+            "id": 2,
+            "title": "Intel Core i9",
+            "description": "Intel Core i9 10th Gen",
+            "price": 22320,
+            "rating": 3.5,
+            "reviewsCount": 690,
+            "imageUrl": "https://i0.wp.com/img.4gamers.com.tw/ckfinder/files/Elvis/Review/Intel-Core-i9-13900K-and-i5-13600K/11.jpg?w=843&ssl=1"
+          }
+        ]
+      },
+      {
+        "id": "story12",
+        "sourceUrl": "https://switchandclick.com/wp-content/uploads/2020/08/IMG_5781-1024x683.webp",
+        "type": "image",
+        "productsList": [
+          {
+            "id": 1,
+            "title": "Cherry Switches",
+            "description": "Professionsl Keyboatd Switches",
+            "price": 12020,
+            "rating": 4.5,
+            "reviewsCount": 1990,
+            "imageUrl": "https://switchandclick.com/wp-content/uploads/2020/08/IMG_5781-1024x683.webp"
+          },
+          {
+            "id": 2,
+            "title": "Intel Core i9",
+            "description": "Intel Core i9 10th Gen",
+            "price": 22320,
+            "rating": 3.5,
+            "reviewsCount": 690,
+            "imageUrl": "https://i0.wp.com/img.4gamers.com.tw/ckfinder/files/Elvis/Review/Intel-Core-i9-13900K-and-i5-13600K/11.jpg?w=843&ssl=1"
+          }
+        ]
+      },
+      {
+        "id": "story13",
+        "sourceUrl": "https://player.vimeo.com/external/464888680.sd.mp4?s=18472423c6d0aad3fae42d6742066a8618ee0f13&profile_id=165&oauth2_token_id=57447761",
+        "type": "video",
+
+        "productsList": [
+          {
+            "id": 1,
+            "title": "Cherry Switches",
+            "description": "Professionsl Keyboatd Switches",
+            "price": 12020,
+            "rating": 4.5,
+            "reviewsCount": 1990,
+            "imageUrl": "https://switchandclick.com/wp-content/uploads/2020/08/IMG_5781-1024x683.webp"
+          },
+          {
+            "id": 2,
+            "title": "Intel Core i9",
+            "description": "Intel Core i9 10th Gen",
+            "price": 22320,
+            "rating": 3.5,
+            "reviewsCount": 690,
+            "imageUrl": "https://i0.wp.com/img.4gamers.com.tw/ckfinder/files/Elvis/Review/Intel-Core-i9-13900K-and-i5-13600K/11.jpg?w=843&ssl=1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "user2",
+    "name": "SOCIEL ",
+    "imgUrl": "https://images.pexels.com/photos/20102617/pexels-photo-20102617/free-photo-of-venice.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    "stories": [
+      {
+        "id": "story21",
+        "sourceUrl": "https://i0.wp.com/img.4gamers.com.tw/ckfinder/files/Elvis/Review/Intel-Core-i9-13900K-and-i5-13600K/11.jpg?w=843&ssl=1",
+        "productsList": [
+          {
+            "id": 1,
+            "title": "Cherry Switches",
+            "description": "Professionsl Keyboatd Switches",
+            "price": 12020,
+            "rating": 4.5,
+            "reviewsCount": 1990,
+            "imageUrl": "https://switchandclick.com/wp-content/uploads/2020/08/IMG_5781-1024x683.webp"
+          },
+          {
+            "id": 2,
+            "title": "Intel Core i9",
+            "description": "Intel Core i9 10th Gen",
+            "price": 22320,
+            "rating": 3.5,
+            "reviewsCount": 690,
+            "imageUrl": "https://i0.wp.com/img.4gamers.com.tw/ckfinder/files/Elvis/Review/Intel-Core-i9-13900K-and-i5-13600K/11.jpg?w=843&ssl=1"
+          }
+        ]
+      },
+
+      {
+        "id": "story24",
+        "sourceUrl": "https://images.pexels.com/photos/20102617/pexels-photo-20102617/free-photo-of-venice.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+        "productsList": [
+          {
+            "id": 1,
+            "title": "Cherry Switches",
+            "description": "Professionsl Keyboatd Switches",
+            "price": 12020,
+            "rating": 4.5,
+            "reviewsCount": 1990,
+            "imageUrl": "https://switchandclick.com/wp-content/uploads/2020/08/IMG_5781-1024x683.webp"
+          },
+          {
+            "id": 2,
+            "title": "Intel Core i9",
+            "description": "Intel Core i9 10th Gen",
+            "price": 22320,
+            "rating": 3.5,
+            "reviewsCount": 690,
+            "imageUrl": "https://i0.wp.com/img.4gamers.com.tw/ckfinder/files/Elvis/Review/Intel-Core-i9-13900K-and-i5-13600K/11.jpg?w=843&ssl=1"
+          }
+        ]
+      },
+      {
+        "id": "story22",
+        "sourceUrl": "https://player.vimeo.com/external/463929634.sd.mp4?s=af141dfab13d19b090243b6eb2553c257cd43d75&profile_id=165&oauth2_token_id=57447761",
+        "type": "video",
+        "productsList": [
+          {
+            "id": 1,
+            "title": "Cherry Switches",
+            "description": "Professionsl Keyboatd Switches",
+            "price": 12020,
+            "rating": 4.5,
+            "reviewsCount": 1990,
+            "imageUrl": "https://switchandclick.com/wp-content/uploads/2020/08/IMG_5781-1024x683.webp"
+          },
+          {
+            "id": 2,
+            "title": "Intel Core i9",
+            "description": "Intel Core i9 10th Gen",
+            "price": 22320,
+            "rating": 3.5,
+            "reviewsCount": 690,
+            "imageUrl": "https://i0.wp.com/img.4gamers.com.tw/ckfinder/files/Elvis/Review/Intel-Core-i9-13900K-and-i5-13600K/11.jpg?w=843&ssl=1"
+          }
+        ]
+      },
+      {
+        "id": "story25",
+        "sourceUrl": "https://player.vimeo.com/external/464888680.sd.mp4?s=18472423c6d0aad3fae42d6742066a8618ee0f13&profile_id=165&oauth2_token_id=57447761",
+        "type": "video",
+        "productsList": [
+          {
+            "id": 1,
+            "title": "Cherry Switches",
+            "description": "Professionsl Keyboatd Switches",
+            "price": 12020,
+            "rating": 4.5,
+            "reviewsCount": 1990,
+            "imageUrl": "https://switchandclick.com/wp-content/uploads/2020/08/IMG_5781-1024x683.webp"
+          },
+          {
+            "id": 2,
+            "title": "Intel Core i9",
+            "description": "Intel Core i9 10th Gen",
+            "price": 22320,
+            "rating": 3.5,
+            "reviewsCount": 690,
+            "imageUrl": "https://i0.wp.com/img.4gamers.com.tw/ckfinder/files/Elvis/Review/Intel-Core-i9-13900K-and-i5-13600K/11.jpg?w=843&ssl=1"
+          }
+        ]
+      },
+      {
+        "id": "story23",
+        "sourceUrl": "https://images.pexels.com/photos/17169284/pexels-photo-17169284/free-photo-of-black-and-white-photo-of-cars-parked-on-a-city-street.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+        "productsList": [
+          {
+            "id": 1,
+            "title": "Cherry Switches",
+            "description": "Professionsl Keyboatd Switches",
+            "price": 12020,
+            "rating": 4.5,
+            "reviewsCount": 1990,
+            "imageUrl": "https://switchandclick.com/wp-content/uploads/2020/08/IMG_5781-1024x683.webp"
+          },
+          {
+            "id": 2,
+            "title": "Intel Core i9",
+            "description": "Intel Core i9 10th Gen",
+            "price": 22320,
+            "rating": 3.5,
+            "reviewsCount": 690,
+            "imageUrl": "https://i0.wp.com/img.4gamers.com.tw/ckfinder/files/Elvis/Review/Intel-Core-i9-13900K-and-i5-13600K/11.jpg?w=843&ssl=1"
+          }
+        ]
+      }
+    ]
+  }
+]

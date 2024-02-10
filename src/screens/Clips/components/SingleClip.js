@@ -36,7 +36,7 @@ const SingleClip = forwardRef(
       <View style={styles.container}>
         <Video
           ref={videoRef}
-          source={{uri: url}}
+          source={require('../../../../assets/sample.mp4')}
           resizeMode="cover"
           style={styles.video}
           paused={paused}

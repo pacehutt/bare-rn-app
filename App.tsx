@@ -5,9 +5,12 @@
  * @format
  */
 
-import React from 'react';
+import 'react-native-gesture-handler';
+
+import React, {useState} from 'react';
 import type {PropsWithChildren} from 'react';
 import {
+  Button,
   ScrollView,
   StatusBar,
   StyleSheet,
@@ -25,6 +28,9 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import Clips from './src/screens/Clips';
 import {SafeAreaView} from 'react-native-safe-area-context';
+import Feed from './src/screens/Feed';
+import FeedNavigator from './src/navigation/FeedNavigator';
+import {NavigationContainer} from '@react-navigation/native';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -33,35 +39,26 @@ function App(): React.JSX.Element {
   //   backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   // };
 
+  const [showFeed, setShowFeed] = useState(true);
   return (
-    <SafeAreaView
-      style={{
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}>
-      <Clips></Clips>
-    </SafeAreaView>
+    <NavigationContainer>
+      <FeedNavigator />
+    </NavigationContainer>
   );
 }
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
+  button: {
+    position: 'absolute',
+    top: '30%',
+    left: '40%',
+    zIndex: 1000,
   },
 });
 
